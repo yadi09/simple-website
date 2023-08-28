@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>www.yadipictures.com</title>
+<style type="text/css">
+#p2 {
+font-weight: 1000;
+}
+#p2 {
+font-size: 2em;
+}
+* {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      .nav-bar a {
+         text-decoration: none;
+         color: black;
+         display: block;
+      }
+      .nav-bar > ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+      }
+      .nav-bar > ul > li > a {
+         padding: 10px;
+         background: lightgrey;
+      }
+      .nav-bar > ul > li > a:hover {
+         background: #173459;
+         color: #f8f9f9;
+      }
+      .nav-bar .active {
+         background: #173459;
+         color: #f8f9f9;
+      }
+      .nav-bar li {
+         float: left;
+         width: 25%; /* 100% / 4 (number of li elements) = 25% */
+         text-align: center;
+         border-right: 1px solid #333; /* for the borders */
+      }
+      .nav-bar li:last-child {
+         border: none;
+      }
+* {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      .image-container {
+         margin: 0 auto; /* center the image containers */
+         width: 10%;
+         box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22); /* material box shadow */
+         margin-bottom: 1px;
+         transition-duration: 1s;
+      }
+      .image-container:hover {
+         width: 30%;
+         box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      }
+      /* make the images responsive */
+      img {
+         width: 100%;
+         height: auto;
+      }
+      .image-description {
+         padding: 0 15px 15px 15px;
+         text-align: center;
+      }
+      
+      /* lightbox stylesheet */
+      .lightbox {
+         display: table; /* helps us center the lightbox-content */
+         transition-duration: 1s; /* duration of the fade in effect */
+         
+         /* make the lightbox occupy the entire page */
+         position: fixed;
+         top: -100%; /* hide the lightbox above the top edge */
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+      }
+      .lightbox:target {
+         top: 0; /* make the lightbox cover the entire page */
+      }
+      .lightbox-content {
+         display: table-cell;
+         vertical-align: middle; /* vertically center */
+         text-align: center; /* horizontally center */
+      }
+      .close {
+         /* position the CLOSE button to the top-right corner */
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         
+         /* style the close button */
+         font-size: 20px;
+         font-weight: 300;
+         text-decoration: none;
+         color: white;
+      }
+      
+      /* make the image responsive */
+      .lightbox img {
+         max-width: 100%;
+         height: auto;
+      }
+</style>
+</head>
+<body style="background-color:olive">
+    <div class="nav-bar">
+      <ul>
+         <li><a href="#"> Home </a></li>
+         <li><a href="#"> About </a></li>
+         <li><a href="#"> Articles </a></li>
+         <li><a href="#" class="active"> Gallery </a></li>
+      </ul>
+   </div>
+<h1 style="text-align:center; font-size:70px">-------MY PHOTOGRAPHY-------</h1>
+<p id="p2">* in below as you can see pictures that took by YADAMZER TEREFE and he want comments from you<p>
+<div class="gallery">
+        
+      <div class="image-container" id="container1">
+         <a href="#image1"><img src="C:\yadiphotoweb\1670044082261.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+      
+      <div class="image-container" id="container2">
+         <a href="#image2"><img src="C:\yadiphotoweb\1670044083554.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+      
+      <div class="image-container" id="container3">
+         <a href="#image3"><img src="C:\yadiphotoweb\1670044090355.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+      
+      <div class="image-container" id="container4">
+         <a href="#image4"><img src="C:\yadiphotoweb\1670044091879.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+      
+      <div class="image-container" id="container5">
+         <a href="#image4"><img src="C:\yadiphotoweb\1670044092863.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+
+      <div class="image-container" id="container6">
+         <a href="#image4"><img src="C:\yadiphotoweb\1670044093514.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+   </div>
+      
+   <div class="lightbox" id="image1">
+      <a href="#" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/road.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image2">
+      <a href="#" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/snow.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image3">
+      <a href="#container3" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/city.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image4">
+      <a href="#container4" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/blue-planet.jpg" />
+      </div>
+   </div>
+
+<div class="lightbox" id="image1">
+      <a href="#" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src= />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image2">
+      <a href="#" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/snow.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image3">
+      <a href="#container3" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/city.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image4">
+      <a href="#container4" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/blue-planet.jpg" />
+      </div>
+   </div>
+</body>
+</html>
